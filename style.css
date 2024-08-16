@@ -3,18 +3,21 @@ body {
     font: 1em sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 .header {
     font-family: "Lucida Console", "Courier New", monospace;
     color: rgb(29, 58, 58);
 }
 
-h1 {
-    text-align: center;
+ul {
+    list-style: none;
 }
 
 .recipes-list {
     font-family: "Monaco", "Courier New", monospace;
-    list-style: none;
 }
 
 .recipes-list li:nth-child(odd) {
@@ -23,6 +26,11 @@ h1 {
 
 .recipes-list p {
     color: #272323;
+}
+
+img {
+    width: 40em;
+    height: auto;
 }
 
 .recipes-list img {
