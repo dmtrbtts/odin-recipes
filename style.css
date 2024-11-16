@@ -1,39 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(233, 229, 221);
-    font: 1em sans-serif;
+	background-color: rgb(238, 238, 238);
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
-h1 {
-    text-align: center;
-}
-
-.header {
-    font-family: "Lucida Console", "Courier New", monospace;
-    color: rgb(29, 58, 58);
-}
-
-ul {
-    list-style: none;
+.page-header {
+	margin: 1em 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .recipes-list {
-    font-family: "Monaco", "Courier New", monospace;
+	list-style: none;
 }
 
-.recipes-list li:nth-child(odd) {
-    background-color: rgb(225, 211, 185);
+.recipe-card {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 2em;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	padding: 1em;
+	white-space: nowrap;
+	min-width: 800px;
+	max-width: 1000px;
+	min-height: 350px;
 }
 
-.recipes-list p {
-    color: #272323;
+.card-image {
+	display: inline-block;
+	width: 50%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
 }
 
-img {
-    width: 40em;
-    height: auto;
+.card-content {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	white-space: wrap;
+	vertical-align: top;
+	padding: 1.5em;
+	text-align: end;
 }
 
-.recipes-list img {
-    width: 30em;
-    height: auto;
+.card-heading {
+	text-align: center;
+	margin: 1em 0 2em;
+}
+
+.card-description {
+	text-align: justify;
+	margin-bottom: 3em;
+}
+
+.read-more-btn {
+	display: inline-block;
+	background-color: rgb(205, 205, 205);
+	color: #111;
+	padding: 0.5em 1em;
+	margin: 0 auto;
 }
